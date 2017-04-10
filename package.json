@@ -1,0 +1,50 @@
+{
+  "name": "shortstack-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/script/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runapp": "node index.ts",
+    "start": "npm run runapp",
+    "postinstall": "npm run runapp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^2.0.41",
+    "@types/node": "^7.0.12",
+    "@types/react": "^15.0.21",
+    "babel-preset-es2015": "^6.22.0",
+    "babelify": "^7.3.0",
+    "bootstrap-grid": "^2.0.1",
+    "browserify": "^14.1.0",
+    "chalk": "^1.1.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-open": "^2.0.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-typescript": "^3.1.5",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8",
+    "reactify": "^1.1.1",
+    "ts-node": "^3.0.2",
+    "tsify": "^3.0.1",
+    "typescript": "^2.2.2",
+    "typescript-node": "^0.1.3",
+    "typescript-register": "^1.1.0",
+    "typescript-require": "^0.2.9-1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "gulp-jquery": "^1.1.2",
+    "jquery": "^3.1.1",
+    "latest-version": "^3.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
