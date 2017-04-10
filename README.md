@@ -1,4 +1,4 @@
-# shortstack-template [![Build Status](https://travis-ci.org/jsmojo/shortstack-template.svg?branch=master)](https://travis-ci.org/jsmojo/shortstack-template)
+# shortstack-template [![Build Status](https://travis-ci.org/jsmojo/shortstack-boilerplate.svg?branch=master)](https://travis-ci.org/jsmojo/shortstack-boilerplate)
 
 Simple short stack template build to be reused
 
