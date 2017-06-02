@@ -9,13 +9,12 @@ let tsify = require("tsify");
 let gutil = require("gulp-util");
 let tsc = require('gulp-typescript');
 let less = require('gulp-less');
-
-
 let reactify = require('reactify');
 
 let vendorJS = [
     'node_modules/jquery/dist/jquery.js',
-    'node_modules/react/dist/react.js'
+    'node_modules/react/dist/react.js',
+    'node_modules/react-dom/dist/react-dom.js'
 ];
 
 let vendorCSS = [
@@ -29,6 +28,7 @@ let config = {
     paths: {
         html : './src/*.html',
         tsc: './src/tsc/*.ts',
+        js: './src/tsc/*.js',
         less: './src/less/*.less',
         dist: './dist', 
         img: './src/images/*'
@@ -87,6 +87,16 @@ gulp.task('tsc', function () {
         .pipe(gulp.dest(config.paths.dist + '/scripts'));
 });
 
+gulp.task('js', function() {
+    browserify(['src/tsc/classes.js', 'src/tsc/components/homepage.js'])
+        .transform(reactify)
+        .bundle()
+        .on('error', console.error.bind(console))
+        .pipe(source('main.js'))
+        .pipe(gulp.dest(config.paths.dist + '/scripts'))
+        .pipe(connect.reload());
+});
+
 gulp.task('less', function () {
   return gulp.src(config.paths.less)
     .pipe(less())
@@ -98,8 +108,9 @@ gulp.task('less', function () {
 gulp.task('watch', function () {
     gulp.watch(config.paths.html, ['html']);
     gulp.watch(config.paths.tsc, ['tsc']);
+    gulp.watch(config.paths.js,['js']);
     gulp.watch(config.paths.less, ['less']);
     gulp.watch(config.paths.img, ['img']);
 });
 
-gulp.task('default', ['html', 'vendorScripts', 'vendorStyles', 'test', 'tsc', 'less', 'img', 'open', 'watch']);
+gulp.task('default', ['html', 'vendorScripts', 'vendorStyles', 'test', 'js', 'tsc', 'less', 'img', 'open', 'watch']);

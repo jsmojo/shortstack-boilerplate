@@ -1,13 +1,17 @@
 {
-  "name": "shortstack-boilerplate",
+  "name": "shortstack-cubes",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/script/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+
     "runapp": "node index.ts",
+    "prestart": "webpack",
     "start": "npm run runapp",
-    "postinstall": "npm run runapp"
+    "postinstall": "npm run runapp",
+    "webpack" : "npm run webpack",
+    "gulp" : "npm run gulp"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +19,8 @@
     "@types/jquery": "^2.0.41",
     "@types/node": "^7.0.12",
     "@types/react": "^15.0.21",
+    "@types/react-dom": "^0.14.23",
+    "awesome-typescript-loader": "^3.1.2",
     "babel-preset-es2015": "^6.22.0",
     "babelify": "^7.3.0",
     "bootstrap-grid": "^2.0.1",
@@ -30,6 +36,7 @@
     "gulp-uglify": "^2.0.1",
     "gulp-util": "^3.0.8",
     "reactify": "^1.1.1",
+    "source-map-loader": "^0.2.1",
     "ts-node": "^3.0.2",
     "tsify": "^3.0.1",
     "typescript": "^2.2.2",
@@ -41,6 +48,7 @@
     "watchify": "^3.9.0"
   },
   "dependencies": {
+    "express": "^4.15.2",
     "gulp-jquery": "^1.1.2",
     "jquery": "^3.1.1",
     "latest-version": "^3.0.0",

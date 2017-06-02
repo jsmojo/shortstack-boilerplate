@@ -1,7 +1,141 @@
-h1 {
-  color: green;
+.clearfix {
+  zoom: 1;
 }
-
-h2 {
-  color: black;
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+  min-width: 300px;
+  background-color: #fff;
+}
+.😍🔥😍 {
+  float: left;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.😍🔥😍.🌋🌌🌙 {
+  opacity: 1;
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
+}
+.🌊🌊 {
+  background-color: white;
+}
+.🌊🌊:before,
+.🌊🌊:after {
+  display: table;
+  content: " ";
+}
+.🌊🌊:after {
+  clear: both;
+}
+.😭🌧😢🌧 {
+  display: none;
+}
+.💔💕 {
+  display: none;
+}
+#🌊🌊🌊🌊 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 650px;
+  background: #e0dada;
+  opacity: 0.80;
+  text-align: center;
+  -webkit-transition: top 5s, left 5s, transform 5s;
+  transition: top 5s, left 5s, transform 5s;
+}
+#🌊🌊🌊🌊 .🌑🌔 {
+  border: 5px solid #e0dada;
+  border-radius: 5px;
+  padding: 60px 30px;
+}
+#🌊🌊🌊🌊 .🌑🌔 .🐉⚡ {
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+#🌊🌊🌊🌊 .🌑🌔 .🐉⚡ img {
+  margin-bottom: 15px;
+  border-radius: 100%;
+}
+#🌊🌊🌊🌊 .🌑🌔 .🤔👾🤔 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+#🌊🌊🌊🌊 .🌑🌔 .🐉⚡🤔👾🤔 {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+#🌊🌊🌊🌊 .🌑🌔 .🐵❤️️🙈🍋 {
+  padding-top: 30px;
+}
+#🌊🌊🌊🌊 .🌑🌔 .🐵❤️️🙈🍋🍇🍇 {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  margin: 10px 10px 0 0;
+  text-indent: -99999px;
+  background: url(/images/social-icons.png);
+}
+#🌊🌊🌊🌊 .🌑🌔 .🐵❤️️🙈🍋🍇🍇 a {
+  display: block;
+  cursor: pointer;
+  width: 72px;
+  height: 72px;
+  text-decoration: none;
+}
+#🌊🌊🌊🌊 .🌑🌔 .🐵❤️️🙈🍋__GitHub {
+  background-position: 164px 0;
+}
+#🌊🌊🌊🌊 .🌑🌔 .🐵❤️️🙈🍋__LinkedIn {
+  background-position: -92px 0;
+}
+#🌊🌊🌊🌊 .🌑🌔 .🐵❤️️🙈🍋__Facebook {
+  opacity: .5;
+}
+@media (min-width: 700px) {
+  #🌊🌊🌊🌊 .🌑🌔 {
+    position: relative;
+    zoom: 1;
+  }
+  #🌊🌊🌊🌊 .🌑🌔:before,
+  #🌊🌊🌊🌊 .🌑🌔:after {
+    content: "";
+    display: table;
+  }
+  #🌊🌊🌊🌊 .🌑🌔:after {
+    clear: both;
+  }
+  #🌊🌊🌊🌊 .🌑🌔 .🐉⚡ {
+    float: left;
+    width: 47%;
+    margin-right: 2%;
+    border-bottom: none;
+    border-right: 1px solid black;
+  }
+  #🌊🌊🌊🌊 .🌑🌔 .🐉⚡ .🐉⚡🤔👾🤔 {
+    padding-bottom: 20px;
+  }
+  #🌊🌊🌊🌊 .🌑🌔 .🐵❤️️🙈🍋 {
+    float: left;
+    width: 49%;
+    position: absolute;
+    top: 50%;
+    transform: translate(90%, -50%);
+  }
 }
